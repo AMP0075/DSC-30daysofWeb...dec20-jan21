@@ -1,0 +1,166 @@
+/*IDEA -> css Zen Garden submission 150 - 'By The Pier', by Peter Ong, http://peter.rock.per.sg/  $$$ and $$$ CSS Typewriter*/
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: typewriter 1.5s infinite;
+}
+
+
+/* Animation */
+
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 infinite normal both, blinkTextCursor 600ms steps(80) normal;
+}
+
+@keyframes typewriter {
+    0% {
+        opacity: 0;
+        width: 0;
+        color: antiquewhite;
+    }
+    13% {
+        opacity: 0.125;
+        width: 1.2em;
+        color: rgb(255, 244, 240);
+    }
+    25% {
+        opacity: 0.25;
+        width: 2.4em;
+        color: rgb(255, 233, 196);
+    }
+    37% {
+        opacity: 0.375;
+        width: 3.6em;
+        color: rgb(229, 245, 220);
+    }
+    50% {
+        opacity: 0.5;
+        width: 4.8em;
+        color: #ecf7c4;
+    }
+    63% {
+        opacity: 0.625;
+        width: 6em;
+        color: #ebcd95;
+    }
+    75% {
+        opacity: 0.75;
+        width: 7.2em;
+        color: #c5f36a;
+    }
+    88% {
+        opacity: 0.875;
+        width: 8.4em;
+        color: #34f5c2;
+    }
+    100% {
+        opacity: 1;
+        width: 9.75em;
+        color: #5065f0;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+body {
+    background-color: black;
+    color: #fc3;
+    font-size: 15px;
+    font-family: Georgia, Times, Times New Roman, serif;
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: all 1.5s;
+    border-radius: 100px;
+    margin: 35px;
+}
+
+input {
+    background-color: mediumturquoise;
+    padding: 10px 50px;
+}
+
+button {
+    border: none;
+    background: rgb(191, 101, 101);
+    color: #fff;
+    padding: 10px 50px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: block;
+}
+
+.sidenav {
+    margin-right: 70em;
+    margin-top: 1em;
+}
+
+.main {
+    margin-left: 10em;
+    margin-top: -12em;
+}
+
+div {
+    border-radius: 100px;
+    background-color: rgb(37, 0, 69);
+}
+
+table {
+    margin: 100px auto;
+    border-spacing: 0px;
+    width: 680px;
+    box-shadow: 5px 4px 30px rgba(0, 0, 0, .10);
+    border-radius: 10px;
+    background: #fff;
+    transition: all 2s;
+    color: greenyellow;
+    background-color: rgb(69, 0, 133);
+}
+
+a:link {
+    color: #cf6;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6fe06f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #f60;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted #005e00;
+}
+
+footer {
+    background-color: rgb(77, 12, 133);
+    align-items: center;
+    margin-right: 180px;
+    margin-left: 180px;
+    border-radius: 100px;
+}
